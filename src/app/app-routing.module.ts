@@ -1,5 +1,4 @@
 import { ListLocationsComponent } from './list-locations/list-locations.component';
-import { FormularioComponent } from './formulario/formulario/formulario.component';
 import { LocationComponent } from './location/location.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
