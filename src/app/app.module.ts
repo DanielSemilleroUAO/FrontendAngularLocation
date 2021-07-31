@@ -1,5 +1,5 @@
 import { DataService } from './services/data-service.service';
-import { LocationServiceService } from './services/location-service.service';
+import { LocationService } from './services/location-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -27,7 +27,7 @@ import { ListLocationsComponent } from './list-locations/list-locations.componen
     FormsModule
   ],
   providers: [
-    LocationServiceService,
+    LocationService,
     DataService
   ],
   bootstrap: [AppComponent]
