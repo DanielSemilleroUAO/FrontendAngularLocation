@@ -1,0 +1,27 @@
+<h1>My Location's</h1>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Area Location</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let location of locations">
+        <td>{{location.name}}</td>
+        <td>{{location.area}}</td>
+        <td><button (click)="updateLocation(location.idLocation)" class="btn btn-success">Update</button></td>
+        <td><button (click)="deleteLocation(location.idLocation)" class="btn btn-warning">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row">
+    <button (click)="addLocation()" class="btn btn-success">Create</button>
+  </div>
+
+</div>
+

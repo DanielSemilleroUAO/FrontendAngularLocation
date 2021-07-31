@@ -1,5 +1,10 @@
 export class Location {
-  constructor(private name: string, private area: number){
+  constructor(
+    public idLocation: number,
+    public name: string,
+    public area: number
+  ){
 
   }
+
 }

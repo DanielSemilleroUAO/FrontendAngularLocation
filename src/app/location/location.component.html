@@ -1,1 +1,21 @@
-<p>location works!</p>
+<h1>Location</h1>
+<div class="container">
+  <div class="alert alert-warning" *ngIf=" LocationForm.dirty && LocationForm.invalid">
+    Enter valid values
+  </div>
+  <div class="alert alert-warning" *ngIf=" LocationForm.dirty && name.invalid">
+    Enter valid Description
+  </div>
+  <form (ngSubmit)="!LocationForm.invalid && saveLocation()" #LocationForm="ngForm">
+    <fieldset class="form-group">
+      <label>Name</label>
+      <input type="text" #name="ngModel" [(ngModel)]="location.name" class="form-control" name="name" required="required" minlength="3">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Area</label>
+      <input type="number" #area="ngModel" [(ngModel)]="location.area" class="form-control" name="area" required="required">
+    </fieldset>
+
+    <button type="submit" class="btn btn-success" >Save</button>
+  </form>
+</div>

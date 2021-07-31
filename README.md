@@ -1,5 +1,24 @@
 # LocationFrontendAngular
 
+Vistas del proyecto:
+
+Tabla de location, opciones de actualizar y eliminar:
+
+![image](/images/TableLocation.PNG)
+
+Formulario para crear una location
+
+![image](/images/FormLocation.PNG)
+
+Formulario para actualizar una location, NOTA: es el mismo solo que se colocan los datos si existe
+
+![image](/images/UpdateLocation.PNG)
+
+Uso de Bootstrap
+
+![image](/images/BootStrap.PNG)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
 ## Development server
